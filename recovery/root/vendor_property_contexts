@@ -1,0 +1,700 @@
+#line 1 "out_odm/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/device/sprd/vnd_sepolicy/vendor/property_contexts"
+persist.vendor.avc.               u:object_r:vendor_avc_prop:s0
+
+##########################
+# property service keys
+#
+#persist.vendor.delta.time u:object_r:system_prop:s0
+persist.vendor.ylog_lite.   u:object_r:vendor_ylog_lite_pprop:s0
+vendor.ylog_lite.   u:object_r:vendor_ylog_lite_prop:s0
+persist.vendor.radio.    u:object_r:vendor_radio_prop:s0
+ro.vendor.modem.         u:object_r:vendor_radio_prop:s0
+ro.vendor.radio.         u:object_r:vendor_radio_prop:s0
+vendor.radio.            u:object_r:vendor_radio_prop:s0
+vendor.ril.              u:object_r:vendor_radio_prop:s0
+vendor.sim.              u:object_r:vendor_radio_prop:s0
+vendor.data.             u:object_r:vendor_radio_prop:s0
+vendor.net.              u:object_r:vendor_radio_prop:s0
+vendor.gsm.serial        u:object_r:vendor_radio_prop:s0
+vendor.bluetooth.        u:object_r:vendor_bt_prop:s0
+persist.vendor.sys.      u:object_r:vendor_sys_prop:s0
+vendor.sys.              u:object_r:vendor_sys_prop:s0
+ro.vendor.codec.weak.cpu u:object_r:vendor_codec_prop:s0
+ro.vendor.media          u:object_r:vendor_video_prop:s0
+vendor.h264dec           u:object_r:vendor_video_prop:s0
+vendor.h264enc           u:object_r:vendor_video_prop:s0
+vendor.m4vdec            u:object_r:vendor_video_prop:s0
+persist.vendor.sysdump   u:object_r:vendor_systemdebuggerd_prop:s0
+vendor.debug.sysdump.enabled   u:object_r:vendor_systemdebuggerd_prop:s0
+persist.vendor.modem.nr.enable u:object_r:vendor_media_prop:s0
+# For thermal
+
+# For Power
+persist.vendor.power.            u:object_r:vendor_power_prop:s0
+
+# For aprd
+persist.vendor.aprservice.enabled       u:object_r:vendor_aprd_prop:s0
+# For Camera
+vendor.cam.            u:object_r:vendor_camera_prop:s0
+ro.vendor.cam.         u:object_r:vendor_camera_prop:s0
+ro.vendor.camerax.     u:object_r:vendor_camera_prop:s0
+persist.vendor.cam.    u:object_r:vendor_camera_prop:s0
+persist.vendor.camera.    u:object_r:vendor_camera_prop:s0
+vendor.debug.camera.af.       u:object_r:vendor_camera_prop:s0
+# For FaceID
+persist.vendor.faceid.       u:object_r:vendor_faceid_prop:s0
+ro.vendor.faceid.            u:object_r:vendor_faceid_prop:s0
+#For Fingerprint
+ro.vendor.fps.      u:object_r:vendor_fps_prop:s0
+# For Hwui
+ro.vendor.hwui.    u:object_r:vendor_hwui_prop:s0
+# For Wcnd
+persist.vendor.wcnd.   u:object_r:vendor_wcnd_prop:s0
+# For slogmodem
+persist.vendor.modem.  u:object_r:vendor_modem_prop:s0
+vendor.modem.          u:object_r:vendor_modem_prop:s0
+ro.vendor.phy.log      u:object_r:vendor_modem_prop:s0
+ro.vendor.ag.          u:object_r:vendor_ag_prop:s0
+ro.vendor.sp.          u:object_r:vendor_sp_prop:s0
+ro.vendor.ch.          u:object_r:vendor_ch_prop:s0
+persist.vendor.ch.     u:object_r:vendor_ch_prop:s0
+ro.vendor.product.partitionpath    u:object_r:vendor_product_prop:s0
+persist.vendor.sp_rst_wcn_status   u:object_r:vendor_sp_prop:s0
+# For engineerMode
+persist.vendor.eng.   u:object_r:vendor_eng_prop:s0
+
+vendor.hwc.drm.device  u:object_r:vendor_hwc_prop:s0
+# For GPU
+ro.vendor.gpu.boost             u:object_r:vendor_gpu_prop:s0
+ro.vendor.gpu.boost.path        u:object_r:vendor_gpu_prop:s0
+ro.vendor.gpu.boost.sf          u:object_r:vendor_gpu_prop:s0
+ro.vendor.gpu.boost.sf.level    u:object_r:vendor_gpu_prop:s0
+ro.vendor.arm.                  u:object_r:vendor_arm_prop:s0
+vendor.mali.                    u:object_r:vendor_arm_prop:s0
+vendor.product.pvr.             u:object_r:vendor_pvr_prop:s0
+ro.vendor.hwui.platform     u:object_r:vendor_hwui_prop:s0
+# For powerhint
+# ro.vendor.powerhint.enable u:object_r:vendor_powerhint_prop:s0
+
+# For sf
+ro.vendor.sf.   u:object_r:vendor_sf_prop:s0
+ro.vendor.gpu.   u:object_r:vendor_gpu_prop:s0
+
+ro.vendor.sf.fbc  u:object_r:vendor_sf_fbc_prop:s0
+ro.vendor.gpu.fbc  u:object_r:vendor_gpu_fbc_prop:s0
+ro.vendor.vsp.fbc  u:object_r:vendor_vsp_fbc_prop:s0
+ro.vendor.whale2.afbc  u:object_r:vendor_whale2_afbc_prop:s0
+
+vendor.all.modules.ready                        u:object_r:vendor_device_prop:s0
+
+#For ro.vendor.soc.*
+vendor.soc.manufacturer    u:object_r:vendor_soc_prop:s0
+vendor.soc.model           u:object_r:vendor_soc_prop:s0
+ro.vendor.soc.usesensorhub  u:object_r:vendor_soc_prop:s0
+ro.vendor.soc.systemuiboost  u:object_r:vendor_soc_prop:s0
+
+#For wifionly
+ro.vendor.radio.noril    u:object_r:vendor_radio_noril_prop:s0
+ro.vendor.radio.hasmodem    u:object_r:vendor_radio_hasmodem_prop:s0
+
+#For dataonly
+ro.vendor.radio.dataonly    u:object_r:vendor_radio_dataonly_prop:s0
+
+#For audio
+ro.vendor.audio.whale_hal          u:object_r:vendor_audio_prop:s0
+persist.vendor.audio.hifi_enabled  u:object_r:vendor_audio_prop:s0
+ro.vendor.af.bt_fc_multiplier      u:object_r:vendor_audio_prop:s0
+ro.vendor.af.dup_multiplier        u:object_r:vendor_audio_prop:s0
+ro.vendor.af.raise_bt_thread_prio  u:object_r:vendor_audio_prop:s0
+ro.vendor.af.check_silence         u:object_r:vendor_audio_prop:s0
+
+# ADD: Audio_GlobalAudioEffect
+persist.vendor.audio.              u:object_r:vendor_audio_prop:s0
+ro.vendor.audio.                   u:object_r:vendor_audio_prop:s0
+
+# ADD: Audio_Sar_Feature
+vendor.audio.voice.        u:object_r:vendor_audio_prop:s0
+
+#for wfd
+ro.vendor.media.wfd.resolution        u:object_r:vendor_wfd_prop:s0
+
+# Audio_PerformanceEnhance
+vendor.audio.rt. u:object_r:vendor_audio_prop:s0
+vendor.audio.cpu. u:object_r:vendor_audio_prop:s0
+
+#for fingerprint dynamic log
+persist.vendor.debug.fp.support  u:object_r:vendor_fp_prop:s0
+
+#For logcat2kmsg
+persist.vendor.logcat2kmsg u:object_r:vendor_logcat_prop:s0
+
+#For DynamicLog
+persist.vendor.camera.bypass.pdaf  u:object_r:vendor_camera_prop:s0
+persist.vendor.fdtop.fdv3  u:object_r:vendor_fdtop_prop:s0
+
+#for wallpaper
+ro.vendor.wallpaper.opaque  u:object_r:vendor_wallpaper_prop:s0
+
+#for display
+ro.vendor.display.multidisplay  u:object_r:vendor_display_prop:s0
+ro.vendor.displayenhance  u:object_r:vendor_display_prop:s0
+ro.vendor.nightdisplay.enhance  u:object_r:vendor_display_prop:s0
+persist.vendor.bl.max  u:object_r:vendor_display_prop:s0
+persist.vendor.hwc.display.modeid u:object_r:vendor_hwc_prop:s0
+persist.vendor.halslp.enabled  u:object_r:vendor_sys_prop:s0
+vendor.hwc.screenup  u:object_r:vendor_hwc_prop:s0
+
+#For Dynamic sensor
+vendor.dynamic_sensor.           u:object_r:vendor_dynamic_sensor_prop:s0
+
+# for sensors
+vendor.sensors.virtual_light  u:object_r:vendor_sensors_prop:s0
+
+#add for Gesture-Recognition
+persist.vendor.gesture_recognition.supported  u:object_r:vendor_gesture-recognition_prop:s0
+
+#for block io
+ro.vendor.ioscheduler.config  u:object_r:vendor_io_prop:s0
+
+#for WiFi
+ro.vendor.wcn.wlanplus_supported  u:object_r:vendor_wifi_prop:s0
+
+#add for io trace feature
+persist.vendor.sprd_blk_debug u:object_r:vendor_sprd_blk_debug_prop:s0
+
+#add for gwp-asan
+persist.vendor.gwpasan.enable u:object_r:vendor_gwpasan_prop:s0
+
+#add for iocost qos
+ro.vendor.iocost.qos u:object_r:vendor_iocost_prop:s0
+
+#add for HTH-361030 FSN/PSN/IMEI/BTMAC/WIFIMAC begin
+ro.vendor.oem.sno u:object_r:vendor_initprop_prop:s0
+ro.vendor.oem.psno u:object_r:vendor_initprop_prop:s0
+ro.vendor.oem.imei u:object_r:vendor_initprop_prop:s0
+ro.vendor.oem.meid u:object_r:vendor_initprop_prop:s0
+ro.vendor.oem.wifimac u:object_r:vendor_initprop_prop:s0
+ro.vendor.oem.btmac u:object_r:vendor_initprop_prop:s0
+ro.vendor.ril.factory_id u:object_r:vendor_initprop_prop:s0
+#add for HTH-361030 FSN/PSN/IMEI/BTMAC/WIFIMAC end
+
+# add for sar
+vendor.wifisar.value    u:object_r:vendor_wifi_Sar_prop:s0
+vendor.startWifiSarTool u:object_r:vendor_wifi_Sar_prop:s0
+# add sar end
+#line 1 "out_odm/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/device/sprd/vnd_sepolicy/vendor/app/property_contexts"
+##########################
+# property service keys
+#
+#persist.vendor.delta.time u:object_r:system_prop:s0
+ 
+# For Video
+vendor.av1dec            u:object_r:vendor_video_prop:s0
+vendor.h265dec           u:object_r:vendor_video_prop:s0
+vendor.vp9dec            u:object_r:vendor_video_prop:s0
+vendor.vpxdec            u:object_r:vendor_video_prop:s0
+vendor.h265enc           u:object_r:vendor_video_prop:s0
+vendor.m4venc            u:object_r:vendor_video_prop:s0
+
+#line 1 "out_odm/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/device/sprd/vnd_sepolicy/vendor/audio/property_contexts"
+#audio sub-system use
+persist.vendor.audio.mdg_mute u:object_r:vendor_audio_prop:s0
+persist.vendor.audio.voice_mute u:object_r:vendor_audio_prop:s0
+persist.vendor.audio.device_route_debug u:object_r:vendor_audio_prop:s0
+persist.vendor.audio.pcm_dump u:object_r:vendor_audio_prop:s0
+persist.vendor.audio.fm_delay u:object_r:vendor_audio_prop:s0
+persist.vendor.audio.diag_reg u:object_r:vendor_audio_prop:s0
+persist.vendor.audio.adsp_support_gvoice u:object_r:vendor_audio_prop:s0
+persist.vendor.audio.param_debug u:object_r:vendor_audio_prop:s0
+persist.vendor.audio.param_scene_debug u:object_r:vendor_audio_prop:s0
+persist.vendor.audio.param_info_debug u:object_r:vendor_audio_prop:s0
+persist.vendor.audio.param_ucp1301_debug u:object_r:vendor_audio_prop:s0
+persist.vendor.audio.param_vbc_debug u:object_r:vendor_audio_prop:s0
+persist.vendor.audio.param_codec_debug u:object_r:vendor_audio_prop:s0
+persist.vendor.audio.nv u:object_r:vendor_audio_prop:s0
+persist.vendor.audio.ramp u:object_r:vendor_audio_prop:s0
+persist.vendor.audio.fade.enable u:object_r:vendor_audio_prop:s0
+persist.vendor.audio.boot_completed u:object_r:vendor_audio_prop:s0
+persist.vendor.audioloop.test.result u:object_r:vendor_audio_prop:s0
+persist.vendor.media.audio.dspreset u:object_r:vendor_audio_prop:s0
+persist.vendor.media.dump.path u:object_r:vendor_audio_prop:s0
+persist.vendor.media.dump.switch u:object_r:vendor_audio_prop:s0
+persist.vendor.media.audiofw.devices.dump u:object_r:vendor_audio_prop:s0
+persist.vendor.media.audiofw.dump u:object_r:vendor_audio_prop:s0
+persist.vendor.media.audio.dump u:object_r:vendor_audio_prop:s0
+persist.vendor.media.systemready.state u:object_r:vendor_audio_prop:s0
+persist.vendor.modem.t.enable u:object_r:vendor_audio_prop:s0
+persist.vendor.modem.w.enable u:object_r:vendor_audio_prop:s0
+persist.vendor.modem.tl.enable u:object_r:vendor_audio_prop:s0
+persist.vendor.modem.lf.enable u:object_r:vendor_audio_prop:s0
+persist.vendor.modem.l.enable u:object_r:vendor_audio_prop:s0
+ro.vendor.audio.fragment_size u:object_r:vendor_audio_prop:s0
+ro.vendor.audio.usb.period_us u:object_r:vendor_audio_prop:s0
+ro.vendor.audio.product.hardware u:object_r:vendor_audio_prop:s0
+ro.vendor.audio_tunning.nr u:object_r:vendor_audio_prop:s0
+ro.vendor.audio_tunning.dual_spk u:object_r:vendor_audio_prop:s0
+ro.vendor.digital.fm.support u:object_r:vendor_audio_prop:s0
+#line 1 "out_odm/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/device/sprd/vnd_sepolicy/vendor/camera/property_contexts"
+persist.vendor.cam.ip                      u:object_r:vendor_camera_prop:s0
+ro.vendor.camera.req.fmq.size              u:object_r:vendor_camera_ro_prop:s0
+ro.vendor.camera.res.fmq.size              u:object_r:vendor_camera_ro_prop:s0
+#line 1 "out_odm/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/device/sprd/vnd_sepolicy/vendor/display/property_contexts"
+
+#Because there is no semicolon, there must be a blank line after each context.by mi
+# property for uiservice dbi
+ro.vendor.display.uiservice_dbi.enable          u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.eyecare.threshold          u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.eyecare.level              u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.hist.threshold             u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.histogram.enable       u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.whitepoint_calibration_enable         u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.df.effect.conflict             u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.fod.dimlayer.enable                   u:object_r:vendor_displayfeature_prop:s0
+
+persist.vendor.df.extcolor.proc          u:object_r:vendor_displayfeature_prop:s0
+
+vendor.displayfeature.entry.enable          u:object_r:vendor_displayfeature_prop:s0
+
+persist.vendor.df.color.temp             u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.colorpick_adjust                      u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.display.type                          u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.xiaomi.bl.poll                        u:object_r:vendor_displayfeature_prop:s0
+
+persist.vendor.dc_backlight.threshold    u:object_r:vendor_displayfeature_prop:s0
+
+persist.vendor.dc_backlight.enable       u:object_r:vendor_displayfeature_prop:s0
+
+persist.vendor.disable_idle_fps          u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.display.skip_idle_for_90hz         u:object_r:vendor_displayfeature_prop:s0
+
+persist.vendor.disable_idle_fps.threshold       u:object_r:vendor_displayfeature_prop:s0
+
+persist.vendor.fod.modified.dc_status                   u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.all_modes.colorpick_adjust            u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.cabc.enable            u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.bcbc.enable            u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.dfps.enable            u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.idle_fps                          u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.disable_idle_fps.threshold        u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.mi_sf.idle_disable_add_gray.enable        u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.mi_sf.idle_disable_add_gray.level        u:object_r:vendor_displayfeature_prop:s0
+
+vendor.hbm.enable            u:object_r:vendor_displayfeature_prop:s0
+
+persist.vendor.dfps.level                u:object_r:vendor_displayfeature_prop:s0
+
+persist.vendor.power.dfps.level          u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.display.default_fps            u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.fps.switch.default             u:object_r:vendor_displayfeature_prop:s0
+
+persist.vendor.max.brightness            u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.soft_backlight.enable     u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.gcp.enable          u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.sre.enable          u:object_r:vendor_displayfeature_prop:s0
+
+init.svc.vendor.displayfeatureaidl-hal          u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.display.mi_calib.enable        u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.dualpanel.dfps      u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.aod.brightness.cust      u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.localhbm.enable                u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.need.check.cup.hbm.coverlayer.enable           u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.cct.need.check.touch.enable                u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.video_box.version     u:object_r:vendor_displayfeature_prop:s0
+
+vendor.video.mode.status        u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.media.video.style.support  u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.hbm_backlight.enable   u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.display.disable_update_systemUIFlag    u:object_r:vendor_displayfeature_prop:s0
+
+# support force skip idle when the power is full with charger
+ro.vendor.display.ltpo.powerfull.with.charger.support    u:object_r:vendor_displayfeature_prop:s0
+
+# support touch event to enter/exit idle
+ro.vendor.display.touch.idle.enable    u:object_r:vendor_displayfeature_prop:s0
+
+# default idle fps
+ro.vendor.display.idle_default_fps     u:object_r:vendor_displayfeature_prop:s0
+
+# property for all modes support WCG
+ro.vendor.display.all_modes_support_WCG.enable             u:object_r:vendor_displayfeature_prop:s0
+
+# support idle fps switch
+ro.vendor.display.idle_default_fps.support    u:object_r:vendor_displayfeature_prop:s0
+
+# primary idle fps by brightness
+ro.vendor.display.primary_idle_refresh_rate   u:object_r:vendor_displayfeature_prop:s0
+
+# sec idle fps by brightness
+ro.vendor.display.secondary_idle_refresh_rate u:object_r:vendor_displayfeature_prop:s0
+
+# display sync tp to idle
+ro.vendor.display.ltpo.sync.tp  u:object_r:vendor_displayfeature_prop:s0
+
+# support fod monitor fps switch
+ro.vendor.display.fod_monitor_default_fps    u:object_r:vendor_displayfeature_prop:s0
+
+# support aod monitor fps switch
+ro.vendor.display.aod_monitor_default_fps    u:object_r:vendor_displayfeature_prop:s0
+
+# support heart rate lock fps 120
+ro.vendor.display.heartrate_lockfps_support u:object_r:vendor_displayfeature_prop:s0
+
+# support fod 110nit lux level
+ro.vendor.fod.110nit.lux.level               u:object_r:vendor_displayfeature_prop:s0
+
+# support video or camera fps switch
+ro.vendor.display.video_or_camera_fps.support u:object_r:vendor_displayfeature_prop:s0
+
+# video or camera fps stat timer interval
+ro.vendor.display.set_fps_stat_timer_ms       u:object_r:vendor_displayfeature_prop:s0
+
+# support thermal limit fps switch
+ro.vendor.fps.switch.thermal     u:object_r:vendor_displayfeature_prop:s0
+
+# support idle switch by powercloud
+ro.vendor.display.ltpo.idle.switch.powercloud     u:object_r:vendor_displayfeature_prop:s0
+
+# support tp idle switch in low brightness
+ro.vendor.display.ltpo.tp.idle.lowbrightness.support     u:object_r:vendor_displayfeature_prop:s0
+
+#aod layer check
+ro.vendor.aod_layer.check        u:object_r:vendor_displayfeature_prop:s0
+
+# surfaceflinger support to change the size of FrameBuffer target
+ro.vendor.sf.enable_fb_scaling         u:object_r:vendor_displayfeature_prop:s0
+
+vendor.display.enable_fb_scaling         u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.display.nature_mode.enable   u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.display.ai_disp.enable       u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.standard.video.enable        u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.pcc.dc.enable                u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.display.expert_calib.enable  u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.use.partial.brightness       u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.thermal.dimming.enable       u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.display.dither               u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.display.dual_builtin_disp    u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.display.standard_d75_enable      u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.display.bl_lut_calib.enable      u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.display.darkmode_dither.enable  u:object_r:vendor_displayfeature_prop:s0
+
+ro.vendor.display.dynamic_refresh_rate       u:object_r:vendor_promotion_prop:s0
+
+#dumpsys displayfeature
+ro.vendor.displayfeature.dump          u:object_r:vendor_displayfeature_prop:s0
+
+#use hwc thermal dimming
+ro.vendor.display.hwc_thermal_dimming         u:object_r:vendor_displayfeature_prop:s0
+
+#use framework thermal dimming
+ro.vendor.display.framework_thermal_dimming         u:object_r:vendor_displayfeature_prop:s0
+
+# whether displayfeature support dolby vision change mode and notify framework.
+ro.vendor.display.dolbyvision.support         u:object_r:vendor_displayfeature_prop:s0
+
+persist.vendor.dolbyvision.flat_on     u:object_r:vendor_displayfeature_prop:s0
+
+# property for ai pq
+ro.vendor.video.style.by.layer.support         u:object_r:vendor_displayfeature_prop:s0
+
+persist.vendor.displayfeature.video.pq.type    u:object_r:vendor_displayfeature_prop:s0
+
+# property for ai pq
+ro.vendor.regionpq.by.layer.support            u:object_r:vendor_displayfeature_prop:s0
+
+# property for sdr2hdr
+ro.vendor.sdr2hdr.by.layer.support             u:object_r:vendor_displayfeature_prop:s0
+
+# property for pqaidl
+ro.vendor.mtk.pq.aidl             u:object_r:vendor_displayfeature_prop:s0
+
+#property for iqiyi 10bit
+ro.vendor.display.support_iqiyi_10bit             u:object_r:vendor_displayfeature_prop:s0
+
+# property for pqodm
+ro.vendor.mtk.pq.odm             u:object_r:vendor_displayfeature_prop:s0
+
+# property for iris support
+ro.vendor.display.iris_x7.support        u:object_r:vendor_displayfeature_prop:s0
+
+# property for dualDPU
+ro.vendor.display.dualDPU.support        u:object_r:vendor_displayfeature_prop:s0
+
+# property for hyperos dualDPU
+ro.vendor.display.hyperos.miDualDPU_support        u:object_r:vendor_displayfeature_prop:s0
+
+# property for hyperos dualDPU gamebox version
+ro.vendor.display.hyperos.miDualDPU_gamebox_version        u:object_r:vendor_displayfeature_prop:s0
+
+# property for uiservice
+ro.vendor.display.uiservice.enable          u:object_r:vendor_displayfeature_prop:s0
+
+# property for uiservice ess3
+ro.vendor.display.uiservice_DynElvss.enable          u:object_r:vendor_displayfeature_prop:s0
+
+# property for uiservice od
+ro.vendor.display.uiservice_od.enable          u:object_r:vendor_displayfeature_prop:s0
+
+# property for uiservice tpidle timer
+ro.vendor.display.uiservice_tpidle_timer.enable          u:object_r:vendor_displayfeature_prop:s0
+
+# property for uiservice dre4
+ro.vendor.display.uiservice_snm.enable          u:object_r:vendor_displayfeature_prop:s0
+
+# property for uiservice debug
+persist.vendor.display.uiservice_debug.enable          u:object_r:vendor_displayfeature_prop:s0
+
+# property for uiservice track
+ro.vendor.display.uiservice_track.enable          u:object_r:vendor_displayfeature_prop:s0
+
+# property for benchmark
+ro.vendor.display.benchmark_app                u:object_r:vendor_displayfeature_prop:s0
+
+# property for force user hwc backlight
+vendor.display.hwc_backlight.support           u:object_r:vendor_displayfeature_prop:s0
+
+# property for limit J18 primary panel
+ro.vendor.display.primary.fps.limit            u:object_r:vendor_displayfeature_prop:s0
+
+# property for active mode change optimization
+ro.vendor.display.mode_change_optimize.enable    u:object_r:vendor_displayfeature_prop:s0
+
+# property for M2 switch resolution
+vendor.display.resolution_aosp           u:object_r:vendor_displayfeature_prop:s0
+
+# property for M2 switch resolution support
+ro.vendor.display.switch_resolution.support    u:object_r:vendor_displayfeature_prop:s0
+
+# property for ultimate perf mode support
+ro.vendor.display.ultimate.perf.support    u:object_r:vendor_displayfeature_prop:s0
+
+# prop wildcard configuration for mi_sf
+ro.vendor.mi_sf.         u:object_r:vendor_displayfeature_prop:s0
+vendor.mi_sf.            u:object_r:vendor_displayfeature_prop:s0
+persist.vendor.mi_sf.    u:object_r:vendor_displayfeature_prop:s0
+
+# property for factory calibration
+vendor.display.panel.calibration.status    u:object_r:vendor_displayfeature_prop:s0
+
+#property for virtual CCT type support
+ro.vendor.display.virtualCCT.support           u:object_r:vendor_displayfeature_prop:s0
+
+#property for set idle fps
+ro.vendor.display.idle_fps     u:object_r:vendor_displayfeature_prop:s0
+
+#property for set tp_idle fps
+ro.vendor.display.tp_idle_fps     u:object_r:vendor_displayfeature_prop:s0
+
+#propert for mtk support df v4
+ro.vendor.display.support_df_v4     u:object_r:vendor_displayfeature_prop:s0
+
+# whether displayfeature support pic hdr information change mode and notify framework.
+ro.vendor.display.picture_hdr.support         u:object_r:vendor_displayfeature_prop:s0
+
+# property for secondary display idle time
+ro.vendor.display.set_sec_idle_timer_ms        u:object_r:vendor_displayfeature_prop:s0
+
+# property for dbi by temperature
+ro.vendor.display.update_dbi_by_temperature        u:object_r:vendor_displayfeature_prop:s0
+
+# property for primary display dbi by temperature
+ro.vendor.display.primary_update_dbi_by_temperature    u:object_r:vendor_displayfeature_prop:s0
+
+# property for second display dbi by temperature
+ro.vendor.display.second_update_dbi_by_temperature    u:object_r:vendor_displayfeature_prop:s0
+
+# property for gray by temperature
+ro.vendor.display.update_gray_by_temperature        u:object_r:vendor_displayfeature_prop:s0
+
+# property for fram drop enable
+ro.vendor.display.kernel_recoder_enable  u:object_r:vendor_displayfeature_prop:s0
+
+# property for cinema mode
+vendor.mi.filter.lut.enable    u:object_r:vendor_displayfeature_prop:s0
+
+#property for dpu dobly
+ro.vendor.display.dobly_dpu.enable    u:object_r:vendor_displayfeature_prop:s0
+
+#property for adaptivehdr
+ro.vendor.display.adaptive_hdr.enable    u:object_r:vendor_displayfeature_prop:s0
+
+# property for sec screen light sensor
+ro.vendor.display.sec_screen_light_sensor_type    u:object_r:vendor_displayfeature_prop:s0
+
+# property for color inversion
+ro.vendor.display.color_inversion.enable    u:object_r:vendor_displayfeature_prop:s0
+
+#property for game hdr
+ro.vendor.pq.disp_game_HDR_support    u:object_r:vendor_displayfeature_prop:s0
+
+# property for cinema mode stc lut
+ro.vendor.display.adaptce_stc_lut_enable    u:object_r:vendor_displayfeature_prop:s0
+#line 1 "out_odm/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/device/sprd/vnd_sepolicy/vendor/engpc/property_contexts"
+# For engpc
+vendor.flag.engpc.onemodem.enable       u:object_r:vendor_engpc_prop:s0
+vendor.flag.sys.usb.config              u:object_r:vendor_engpc_prop:s0
+vendor.ro.bootmode                      u:object_r:vendor_engpc_prop:s0
+persist.vendor.modem.log_dest           u:object_r:vendor_engpc_prop:s0
+persist.vendor.wcn.log_dest             u:object_r:vendor_engpc_prop:s0
+ro.vendor.modem.support                 u:object_r:vendor_engpc_prop:s0
+vendor.flag.engpc.restart               u:object_r:vendor_engpc_prop:s0
+persist.vendor.gnss.tool.test           u:object_r:vendor_engpc_prop:s0
+
+#For 5G
+vendor.flag.sys.5gusb.config            u:object_r:vendor_engpc_prop:s0
+
+#line 1 "out_odm/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/device/sprd/vnd_sepolicy/vendor/gpu/property_contexts"
+# For hal_graphics_composer_default
+
+# For hal_graphics_allocator_default
+#line 1 "out_odm/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/device/sprd/vnd_sepolicy/vendor/memory/property_contexts"
+ro.vendor.lmk. u:object_r:vendor_lmk_prop:s0
+#For zramwb
+vendor.zram. u:object_r:vendor_zramwb_prop:s0
+
+#line 1 "out_odm/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/device/sprd/vnd_sepolicy/vendor/npu/property_contexts"
+vendor.debug.nn.img.dump_path u:object_r:vendor_img_nnhal_debug_prop:s0
+persist.vendor.npu.   u:object_r:vendor_npu_prop:s0
+
+#line 1 "out_odm/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/device/sprd/vnd_sepolicy/vendor/power/property_contexts"
+ro.vendor.minui.hwrotation  u:object_r:vendor_hwrotation_prop:s0
+
+#line 1 "out_odm/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/device/sprd/vnd_sepolicy/vendor/security/property_contexts"
+vendor.sprd.storageproxyd.                    u:object_r:vendor_storageproxyd_default_prop:s0
+# mi dlc prop
+ro.vendor.dpc_support u:object_r:vendor_security_dlc_prop:s0
+persist.vendor.rpmb.sync_flag u:object_r:vendor_security_rpmb_sync_prop:s0
+
+#line 1 "out_odm/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/device/sprd/vnd_sepolicy/vendor/thermal/property_contexts"
+persist.vendor.thermal. u:object_r:vendor_thermald_prop:s0
+persist.vendor.bsservice. u:object_r:vendor_thermald_prop:s0
+vendor.thermal. u:object_r:vendor_thermald_prop:s0
+#line 1 "out_odm/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/device/sprd/vnd_sepolicy/vendor/v-ab/property_contexts"
+ro.vendor.secure.boot.kce_ota  u:object_r:vendor_kce_prop:s0
+#line 1 "out_odm/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/device/sprd/vnd_sepolicy/vendor/wcn/property_contexts"
+vendor.wlan.driver.version                      u:object_r:vendor_wifi_version:s0
+vendor.wlan.firmware.version                    u:object_r:vendor_wifi_version:s0
+vendor.wifi.standard                            u:object_r:vendor_wifi_prop:s0
+vendor.wifi.frequency                           u:object_r:vendor_wifi_prop:s0
+vendor.wifi.infochange                          u:object_r:vendor_wifi_prop:s0
+vendor.wifi.fullpower                           u:object_r:vendor_wifi_prop:s0
+#line 1 "out_odm/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/device/xiaomi/arctic/nfc/property_contexts"
+# NFC
+vendor.nfc.             u:object_r:vendor_nfc_mi_prop:s0
+ro.vendor.nfc.          u:object_r:vendor_nfc_mi_prop:s0
+ro.vendor.se.           u:object_r:vendor_nfc_mi_prop:s0
+
+# TMS NFC properties
+vendor.tms.nfc.                u:object_r:vendor_tms_nfc_prop:s0
+#line 1 "out_odm/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/device/xiaomi/arctic/nfc/sepolicy_nxp/property_contexts"
+# NFC properties
+vendor.nfc.min_firmware     u:object_r:vendor_nfc_prop:s0
+vendor.strongbox.triggerhmac   u:object_r:vendor_strongbox_prop:s0
+#line 1 "out_odm/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/device/sprd/vnd_mpool/module/vendor/cit_config/miui/sepolicy/vendor/property_contexts"
+persist.vendor.sprd.mobilelogger.Running u:object_r:vendor_sys_prop:s0
+persist.vendor.sprd.connsysfw.running    u:object_r:vendor_sys_prop:s0
+persist.vendor.sprd.mdlogger.Running     u:object_r:vendor_sys_prop:s0
+persist.vendor.sprd.sensorlogger.Running u:object_r:vendor_sys_prop:s0
+#line 1 "out_odm/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/vendor/xiaomi/proprietary/mifingerprint/vendor/silead/sepolicy_aidl/aidl/vendor/common/property_contexts"
+
+vendor.silead.fp.ext.    u:object_r:vendor_silead_fp_prop:s0
+#line 1 "out_odm/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/vendor/xiaomi/proprietary/sensor/sepolicy/property_contexts"
+#cct
+#persist.vendor.trigger.cct                   u:object_r:vendor_cct_prop:s0
+#persist.vendor.goodix.cct_support             u:object_r:vendor_goodix_cct_prop:s0
+
+#for sensor event to onetrack
+persist.vendor.sensor.onetrack               u:object_r:vendor_onetrack_prop:s0
+#for device orient event to onetrack
+persist.vendor.sensor.deviceorient          u:object_r:vendor_deviceorient_prop:s0
+
+#for sensor mis check
+persist.vendor.sensor.mischeck          u:object_r:vendor_mischeck_prop:s0
+#line 1 "out_odm/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/vendor/xiaomi/proprietary/memory_odm_tools/ghr/src/current/sepolicy/common/property_contexts"
+vendor.mi_ic.is.valid     u:object_r:vendor_mi_ic_prop:s0
+#line 1 "out_odm/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/vendor/xiaomi/proprietary/memory_odm_tools/mi_ric/sepolicy/common/property_contexts"
+vendor.mi_ric.is.valid                             u:object_r:vendor_mi_ric_prop:s0
+vendor.mi_ric.dfq.ctrl                             u:object_r:vendor_mi_ric_prop:s0
+vendor.mi_ric.io.ctrl                              u:object_r:vendor_mi_ric_prop:s0
+vendor.mi_ric.io.starttime                         u:object_r:vendor_mi_ric_prop:s0
+vendor.mi_ric.io.worktime                          u:object_r:vendor_mi_ric_prop:s0
+vendor.mi_ric.io.workgap                           u:object_r:vendor_mi_ric_prop:s0
+#line 1 "out_odm/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/device/xiaomi/arctic/module/thermal/thermal_config/mi_thermald/sepolicy/property_contexts"
+vendor.sys.thermal.data.path                             u:object_r:vendor_thermal_normal_prop:s0
+#line 1 "out_odm/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/vendor/xiaomi/proprietary/mtdservice/aidl/default/sepolicy/property_contexts"
+ro.boot.cpuid                                      u:object_r:vendor_cpuid_prop:s0
+ro.boot.chipid                                     u:object_r:vendor_chipid_prop:s0
+vendor.sys.rpmb_state                              u:object_r:vendor_payment_security_prop:s0
+vendor.sys.feature_state                           u:object_r:vendor_payment_security_prop:s0
+persist.vendor.sys.pay.widevine                    u:object_r:vendor_payment_security_prop:s0
+persist.vendor.sys.pay.soter                       u:object_r:vendor_payment_security_prop:s0
+persist.vendor.sys.provision.status                u:object_r:vendor_payment_security_prop:s0
+persist.vendor.sys.attestation.status              u:object_r:vendor_payment_security_prop:s0
+persist.vendor.sys.ese_attestation.status          u:object_r:vendor_payment_security_prop:s0
+persist.vendor.sys.id.status                       u:object_r:vendor_payment_security_prop:s0
+ro.vendor.oem.serialno                             u:object_r:vendor_deviceid_prop:s0
+persist.vendor.sys.rkp.status                      u:object_r:vendor_payment_security_prop:s0
+persist.vendor.sys.applet_configuration.status     u:object_r:vendor_payment_security_prop:s0
+persist.vendor.sys.keymint_configuration.status    u:object_r:vendor_payment_security_prop:s0
+persist.vendor.production.rpmbkey_provision        u:object_r:vendor_payment_security_prop:s0
+
+#line 1 "out_odm/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/vendor/xiaomi/proprietary/mlipay/aidl/default/sepolicy/property_contexts"
+persist.vendor.sys.pay.ifaa              u:object_r:vendor_payment_security_prop:s0
+
+#line 1 "out_odm/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/vendor/xiaomi/proprietary/miriskmanager/sepolicy/property_contexts"
+odm.security.rootpub.trigger                  u:object_r:vendor_payment_security_prop:s0
+odm.security.rotatekey.trigger                u:object_r:vendor_payment_security_prop:s0
+odm.security.rootpub.load                     u:object_r:vendor_payment_security_prop:s0
+odm.security.rotatekey.load                   u:object_r:vendor_payment_security_prop:s0
+#line 1 "out_odm/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/vendor/xiaomi/proprietary/miface/sepolicy/common/property_contexts"
+
+persist.vendor.security.securecamera      u:object_r:vendor_secure_camera_prop:s0
+#line 1 "out_odm/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/system/sepolicy/reqd_mask/property_contexts"
+# empty property_contexts file - this file is used to generate an empty
+# non-platform property context for devices without any property_contexts
+# customizations.
